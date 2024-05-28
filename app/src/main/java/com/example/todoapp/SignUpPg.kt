@@ -1,6 +1,9 @@
 package com.example.todoapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +18,16 @@ class SignUpPg : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val btnSignUp = findViewById<Button>(R.id.SignUpBtn)
+        val tVLogin = findViewById<TextView>(R.id.tVLogin)
+        btnSignUp.setOnClickListener {
+            val intent = Intent(this, LoginPage::class.java)
+            startActivity(intent)
+        }
+        tVLogin.setOnClickListener {
+            val intent = Intent(this, LoginPage::class.java)
+            startActivity(intent)
         }
     }
 }
