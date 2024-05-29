@@ -24,7 +24,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginPage::class.java))
             finish()
         },2000)
-        val controller = WindowInsetsControllerCompat(window, window.decorView)
-        controller.hide(WindowInsetsCompat.Type.statusBars())
     }
 }
