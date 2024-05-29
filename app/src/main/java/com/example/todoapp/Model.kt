@@ -1,4 +1,7 @@
 package com.example.todoapp
 
-class Model(val name: String, val check: Boolean, val edit: Int, val delete: Int) {
+
+class Model(var name: String, var isChecked: Boolean, var editIcon: Int, var deleteIcon: Int) {
+
 }
+
