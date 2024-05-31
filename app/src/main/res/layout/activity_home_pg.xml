@@ -64,7 +64,7 @@
     </ScrollView>
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -82,7 +82,7 @@
         android:padding="5dp"
         android:textSize="25sp"
         android:background="#FDBF03"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+        app:layout_constraintBottom_toBottomOf="@+id/plus"
+        app:layout_constraintEnd_toStartOf="@+id/plus"
+        app:layout_constraintTop_toTopOf="@+id/plus" />
 </androidx.constraintlayout.widget.ConstraintLayout>
