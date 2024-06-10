@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:background="#4D77B6"
         android:fontFamily="@font/abril_fatface"
@@ -29,40 +29,63 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/taskRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="560dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/plus"
         app:layout_constraintEnd_toEndOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:listitem="@layout/task_list" />
-
+        tools:listitem="@layout/tasks_item" />
 
     <ImageView
         android:id="@+id/plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/taskRecyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/taskRecyclerView"
         app:srcCompat="@drawable/plus" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="35dp"
-        android:text="Add Task Here ->"
-        android:textStyle="bold"
-        android:padding="5dp"
-        android:textSize="25sp"
+        android:layout_marginEnd="10dp"
         android:background="#FDBF03"
+        android:padding="5dp"
+        android:text="Add Task"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/plus"
         app:layout_constraintEnd_toStartOf="@+id/plus"
         app:layout_constraintTop_toTopOf="@+id/plus" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/taskRecyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/taskRecyclerView"
+        app:layout_constraintStart_toStartOf="@+id/taskRecyclerView"
+        app:layout_constraintTop_toTopOf="@+id/taskRecyclerView" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        android:textColor="#353434"
+        android:backgroundTint="#FDBF03"
+        app:layout_constraintStart_toStartOf="@+id/taskRecyclerView"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
