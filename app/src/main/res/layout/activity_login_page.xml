@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.071" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
@@ -70,7 +70,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
@@ -85,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.68"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -104,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.120" />
 
     <LinearLayout
@@ -122,7 +122,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/rememberCheckBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -160,12 +160,14 @@
             app:layout_constraintVertical_bias="0.283"
             android:textColor="#FFBB02"
             android:padding="10sp"/>
-        <TextView
-            android:id="@+id/tVSignUp"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/SignUpButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign Up"
-            android:textColor="#FFBB02"
+            android:textStyle="bold"
+            android:backgroundTint="#FFC122"
+            android:fontFamily="@font/alike"
             android:textSize="15sp"
             android:padding="10sp"/>
     </LinearLayout>

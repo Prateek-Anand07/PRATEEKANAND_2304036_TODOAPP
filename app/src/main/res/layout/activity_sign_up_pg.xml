@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/createAcc" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/emailEdText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
@@ -96,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/emailEdText" />
 
     <EditText
         android:id="@+id/eTConfirmPassword"
@@ -156,14 +156,16 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
             app:layout_constraintVertical_bias="0.283" />
 
-        <TextView
-            android:id="@+id/tVLogin"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/LoginButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#FFC122"
+            android:fontFamily="@font/alike"
             android:padding="10sp"
             android:text="Login"
-            android:textColor="#FFBB02"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 
