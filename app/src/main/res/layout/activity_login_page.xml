@@ -121,15 +121,6 @@
         app:layout_constraintTop_toBottomOf="@+id/LoginBtn"
         app:layout_constraintVertical_bias="0.0">
 
-        <CheckBox
-            android:id="@+id/rememberCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="Remember Me"
-            android:textColor="#FFBB02" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
