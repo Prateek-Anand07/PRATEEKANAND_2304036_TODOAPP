@@ -19,7 +19,7 @@ To install the app, follow these steps:
 1. **Clone the Repository**:
    - Clone the project from GitHub to your local system using the following command:
      ```bash
-     git clone https://github.com/Prateek-Anand07/To-Do-App
+     git clone https://github.com/Prateek-Anand07/To-Do-App.git
      ```
    
 2. **Open in Android Studio**:
