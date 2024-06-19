@@ -75,7 +75,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
         android:drawableStart="@drawable/lock"
-        android:drawableEnd="@drawable/password_hide"
         android:drawablePadding="20dp"
         android:hint="Password"
         android:padding="10dp"
