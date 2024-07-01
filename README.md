@@ -78,6 +78,10 @@ After logging in, users will land on the home page where they can:
 - **Update**: Click on the update button to edit task details.
 - **Delete**: Use the delete button to remove a task from the list.
 
+## Video
+
+https://drive.google.com/file/d/1NOBxYmbAHnptUCOKRPwZH7v9xw6Kxvdq/view?t=1
+
 ## Contributing
 
 We welcome contributions to improve the To Do App! To contribute:
