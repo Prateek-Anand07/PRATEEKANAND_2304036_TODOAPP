@@ -48,7 +48,7 @@ class TaskAdd : AppCompatActivity() {
                                 if (task.isSuccessful) {
                                     Toast.makeText(
                                         this,
-                                        "Task saved successfuly",
+                                        "Task saved successfully",
                                         Toast.LENGTH_SHORT
                                     ).show()
                                     finish()
